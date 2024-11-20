@@ -1,0 +1,210 @@
+{
+  "description": "项目私有配置文件。此文件中的内容将覆盖 project.config.json 中的相同字段。项目的改动优先同步到此文件中。详见文档：https://developers.weixin.qq.com/miniprogram/dev/devtools/projectconfig.html",
+  "condition": {
+    "miniprogram": {
+      "list": [
+        {
+          "name": "packageB/pages/C_signIn/C_signIn",
+          "pathName": "packageB/pages/C_signIn/C_signIn",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "packageB/pages/C_queue/C_queue",
+          "pathName": "packageB/pages/C_queue/C_queue",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "packageB/pages/C_register/C_register",
+          "pathName": "packageB/pages/C_register/C_register",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "packageA/pages/B_viewQueue/B_viewQueue",
+          "pathName": "packageA/pages/B_viewQueue/B_viewQueue",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "packageA/pages/B_createInterview/B_createInterview",
+          "pathName": "packageA/pages/B_createInterview/B_createInterview",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "packageB/pages/C_signIn/C_signIn",
+          "pathName": "packageB/pages/C_signIn/C_signIn",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "packageB/pages/C_score/C_score",
+          "pathName": "packageB/pages/C_score/C_score",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "packageB/pages/C_resume/C_resume",
+          "pathName": "packageB/pages/C_resume/C_resume",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "packageB/pages/C_register/C_register",
+          "pathName": "packageB/pages/C_register/C_register",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "packageB/pages/C_queue/C_queue",
+          "pathName": "packageB/pages/C_queue/C_queue",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "packageB/pages/C_bookInterview/C_bookInterview",
+          "pathName": "packageB/pages/C_bookInterview/C_bookInterview",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "packageB/pages/C_bookInterview/C_bookInterview",
+          "pathName": "packageB/pages/C_bookInterview/C_bookInterview",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "packageA/pages/B_viewQueue/B_viewQueue",
+          "pathName": "packageA/pages/B_viewQueue/B_viewQueue",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "packageA/pages/B_createInterview/B_createInterview",
+          "pathName": "packageA/pages/B_createInterview/B_createInterview",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "packageC/pages/features/features",
+          "pathName": "packageC/pages/features/features",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "packageB/pages/C_bookInterview/C_bookInterview",
+          "pathName": "packageB/pages/C_bookInterview/C_bookInterview",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "pages/index/index",
+          "pathName": "pages/index/index",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "pages/index/index",
+          "pathName": "pages/index/index",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "pages/index/index",
+          "pathName": "pages/index/index",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "packageA/pages/B_createInterview/B_createInterview",
+          "pathName": "packageA/pages/B_createInterview/B_createInterview",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "packageB/pages/C_bookInterview/C_bookInterview",
+          "pathName": "packageB/pages/C_bookInterview/C_bookInterview",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "packageB/pages/C_queue/C_queue",
+          "pathName": "packageB/pages/C_queue/C_queue",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "pages/index/index",
+          "pathName": "pages/index/index",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "packageA/pages/B_createInterview/B_createInterview",
+          "pathName": "packageA/pages/B_createInterview/B_createInterview",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "packageB/pages/C_score/C_score",
+          "pathName": "packageB/pages/C_score/C_score",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "packageA/pages/B_viewQueue/B_viewQueue",
+          "pathName": "packageA/pages/B_viewQueue/B_viewQueue",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "packageA/pages/B_createInterview/B_createInterview",
+          "pathName": "packageA/pages/B_createInterview/B_createInterview",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "packageB/pages/Introduction/Introduction",
+          "pathName": "packageB/pages/Introduction/Introduction",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        }
+      ]
+    }
+  },
+  "projectname": "%E6%8B%9B%E6%96%B0%E5%B0%8F%E7%A8%8B%E5%BA%8F%E9%A1%B9%E7%9B%AE",
+  "setting": {
+    "compileHotReLoad": true,
+    "urlCheck": false
+  }
+}
