@@ -47,11 +47,11 @@ Page({
         } else if (result.code == 401) {
           PopUp.Toast(result.message, 2, 2000)
           wx.removeStorageSync('platformToken')
-          // setTimeout(() => {
-          //   wx.redirectTo({
-          //     url: '/pages/index/index',
-          //   })
-          // }, 2000)
+          setTimeout(() => {
+            wx.redirectTo({
+              url: '/pages/index/index',
+            })
+          }, 2000)
         } else {
           PopUp.Toast(result.message, 2, 2000)
         }
@@ -77,11 +77,11 @@ Page({
           } else if (result.code == 401) {
             PopUp.Toast(result.message, 2, 2000)
             wx.removeStorageSync('platformToken')
-            // setTimeout(() => {
-            //   wx.redirectTo({
-            //     url: '/pages/index/index',
-            //   })
-            // }, 2000)
+            setTimeout(() => {
+              wx.redirectTo({
+                url: '/pages/index/index',
+              })
+            }, 2000)
           } else {
             PopUp.Toast(result.message, 2, 2000)
           };
@@ -154,11 +154,11 @@ Page({
           const response = JSON.parse(res);
           if (response.code === 200) {
             PopUp.Toast(response.message, 1, 2000);
-            // setTimeout(() => {
-            //   wx.redirectTo({
-            //     url: '../C_signIn/C_signIn',
-            //   })
-            // }, 3000)
+            setTimeout(() => {
+              wx.redirectTo({
+                url: '../C_signIn/C_signIn',
+              })
+            }, 3000)
           } else if (response.code === 205) {
             PopUp.Toast(response.message, 2, 2000);
           } else {

@@ -73,7 +73,7 @@
         </view>
       </view>
     </view>
-    <movable-view direction="all" out-of-bounds x="20" y="20">
+    <movable-view direction="all" out-of-bounds x="100" y="20">
       <!-- 侧边说明面板 -->
       <view class="cardview">
         <view class="circleview"></view>

@@ -63,11 +63,11 @@ Page({
         setTimeout(() => {
           PopUp.Toast(response.message, 2, 1500);
         }, 500);
-        // setTimeout(() => {
-        //   wx.redirectTo({
-        //     url: '/pages/index/index'
-        //   })
-        // }, 2000);
+        setTimeout(() => {
+          wx.redirectTo({
+            url: '/pages/index/index'
+          })
+        }, 2000);
       } else {
         PopUp.Toast(response.message, 2, 2000);
       }
@@ -84,7 +84,7 @@ Page({
    */
   async nextOne() {
     let option = {
-      id: parseInt(this.data.periodid)
+      periodId: parseInt(this.data.periodid)
     }
     try {
       const response = await Interview.interviewNext(option);
@@ -99,11 +99,11 @@ Page({
         setTimeout(() => {
           PopUp.Toast(response.message, 2, 1500);
         }, 500);
-        // setTimeout(() => {
-        //   wx.redirectTo({
-        //     url: '/pages/index/index'
-        //   })
-        // }, 2000);
+        setTimeout(() => {
+          wx.redirectTo({
+            url: '/pages/index/index'
+          })
+        }, 2000);
       } else if (response.code == 504) {
         PopUp.Toast("叫号成功", 2, 3000);
         setTimeout(() => {
@@ -144,11 +144,11 @@ Page({
         setTimeout(() => {
           PopUp.Toast(response.message, 2, 1500);
         }, 500);
-        // setTimeout(() => {
-        //   wx.redirectTo({
-        //     url: '/pages/index/index'
-        //   })
-        // }, 2000);
+        setTimeout(() => {
+          wx.redirectTo({
+            url: '/pages/index/index'
+          })
+        }, 2000);
       } else {
         PopUp.Toast(response.message, 2, 2000);
       }
@@ -189,11 +189,11 @@ Page({
           } else if (result.code == 401) {
             PopUp.Toast(result.message, 2, 2000)
             wx.removeStorageSync('platformToken')
-            // setTimeout(() => {
-            //   wx.redirectTo({
-            //     url: '/pages/index/index',
-            //   })
-            // }, 2000)
+            setTimeout(() => {
+              wx.redirectTo({
+                url: '/pages/index/index',
+              })
+            }, 2000)
           } else {
             PopUp.Toast(result.message, 2, 2000)
           };

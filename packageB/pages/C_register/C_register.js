@@ -215,11 +215,11 @@ Page({
             console.log(response.code)
             PopUp.Toast(response.message, 2, 1000)
             wx.removeStorageSync('platformToken')
-            // setTimeout(() => {
-            //   wx.redirectTo({
-            //     url: '/pages/index/index',
-            //   })
-            // }, 1500)
+            setTimeout(() => {
+              wx.redirectTo({
+                url: '/pages/index/index',
+              })
+            }, 1500)
           } else {
             PopUp.Toast(response.message, 2, 500)
           }

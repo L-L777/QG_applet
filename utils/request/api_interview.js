@@ -13,9 +13,9 @@ const Interview = {
   interviewNext: (options) => {
     console.log('叫号下一个', options)
     return Request({
-      url: Api.callNext,
+      url: `${Api.callNext}?periodId=${parseInt(options.periodId)}`,
       method: 'POST',
-      data: options
+      // data: options
     })
   },
   interviewSetInterviewStatus:(options) => {

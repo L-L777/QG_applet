@@ -232,11 +232,11 @@ Page({
         } else if (result.code === 401) {
           PopUp.Toast(result.message, 2, 2000)
           wx.removeStorageSync('platformToken')
-          // setTimeout(() => {
-          //   wx.redirectTo({
-          //     url: '/pages/index/index',
-          //   })
-          // }, 2000)
+          setTimeout(() => {
+            wx.redirectTo({
+              url: '/pages/index/index',
+            })
+          }, 2000)
         } else {
           PopUp.Toast(response.message, 3, 2000);
         }
@@ -298,11 +298,11 @@ Page({
         } else if (result.code == 401) {
           PopUp.Toast(result.message, 2, 500)
           wx.removeStorageSync('platformToken')
-          // setTimeout(() => {
-          //   wx.redirectTo({
-          //     url: '/pages/index/index',
-          //   })
-          // }, 1000)
+          setTimeout(() => {
+            wx.redirectTo({
+              url: '/pages/index/index',
+            })
+          }, 1000)
         } else {
           PopUp.Toast(result.message, 2, 2000)
         }

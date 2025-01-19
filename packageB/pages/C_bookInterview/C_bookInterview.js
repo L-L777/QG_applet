@@ -90,11 +90,11 @@ Page({
               PopUp.Toast(response.message, 3, 500);
             }, 500);
             wx.removeStorageSync('platformToken')
-            // setTimeout(() => {
-            //   wx.redirectTo({
-            //     url: '/pages/index/index'
-            //   })
-            // }, 1000);
+            setTimeout(() => {
+              wx.redirectTo({
+                url: '/pages/index/index'
+              })
+            }, 1000);
           } else {
             PopUp.Toast(response.message, 2, 1500);
           }
@@ -156,11 +156,11 @@ Page({
         setTimeout(() => {
           PopUp.Toast(response.message, 2, 1500);
         }, 500);
-        // setTimeout(() => {
-        //   wx.redirectTo({
-        //     url: '/pages/index/index'
-        //   })
-        // }, 2000);
+        setTimeout(() => {
+          wx.redirectTo({
+            url: '/pages/index/index'
+          })
+        }, 2000);
       } else {
         PopUp.Toast(response.message, 2, 2000);
       }

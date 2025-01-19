@@ -271,10 +271,10 @@ const connectWebSocket = function (onMessageCallback) {
         if (currentPage === 'pages/index/index') {
           return
         }
-        //进行跳转
-        // wx.reLaunch({
-        //   url: '/pages/index/index',
-        // })
+        // 进行跳转
+        wx.reLaunch({
+          url: '/pages/index/index',
+        })
       }
     }, 100)
   }

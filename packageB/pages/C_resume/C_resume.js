@@ -25,11 +25,11 @@ Page({
         });
       } else if (response.code === 401) {
         PopUp.Toast(response.message, 2, 1000)
-        // setTimeout(() => {
-        //   wx.redirectTo({
-        //     url: '/pages/index/index',
-        //   })
-        // }, 1500)
+        setTimeout(() => {
+          wx.redirectTo({
+            url: '/pages/index/index',
+          })
+        }, 1500)
       } else {
         PopUp.Toast(response.message, 2, 1000)
       }

@@ -71,11 +71,11 @@ Page({
       } else if (code === 401) {
         PopUp.Toast(message, 3, 500)
         wx.removeStorageSync('platformToken')
-        // setTimeout(() => {
-        //   wx.redirectTo({
-        //     url: '/pages/index/index',
-        //   })
-        // }, 1000)
+        setTimeout(() => {
+          wx.redirectTo({
+            url: '/pages/index/index',
+          })
+        }, 1000)
       } else {
         PopUp.Toast('成绩获取失败', 2, 500)
       }

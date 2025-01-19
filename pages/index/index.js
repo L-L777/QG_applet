@@ -40,17 +40,18 @@ Page({
    */
   login() {
     const that = this;
-    timer = setTimeout(() => {
-      wx.redirectTo({
-        url: '../../packageB/pages/home/home',
-      })
-    }, 500)
+    // timer = setTimeout(() => {
+    //   wx.redirectTo({
+    //     url: '../../packageB/pages/home/home',
+    //   })
+    // }, 500)
     wx.login({
       async success(res) {
+        console.log(res.code);
         if (res.code) {
           try {
             const response = await NewerInterview.login(res.code);
-            // console.log(response.code);
+            console.log(response.code);
             if (response.code === 200 && response.data) {
               const {
                 permissions,

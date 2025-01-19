@@ -17,9 +17,11 @@ Page({
     show: false,
     //时间选择器
     minDate: new Date().getTime(),
-    maxDate: new Date(2024, 5, 1).getTime(),
-    currentstartDate: new Date(2024, 3, 1).getTime(),
-    currentendDate: new Date(2024, 3, 1).getTime(),
+    maxDate: new Date(2025, 5, 1).getTime(),
+    currentstartDate: new Date(2025, 3, 1).getTime(),
+    currentendDate: new Date(2025, 3, 1).getTime(),
+    timeStart:'',
+    timeEnd:'',
     //折叠
     activeName: '',
     //人数
@@ -37,14 +39,18 @@ Page({
 
   //时间选择框
   onstartInput(value) {
+    let timeStart=this.timeStampHandle(value.detail)
     this.setData({
       currentstartDate: value.detail,
+      timeStart:timeStart
     });
   },
   onendInput(value) {
     console.log(value);
+    let timeEnd=this.timeStampHandle(value.detail)
     this.setData({
       currentendDate: value.detail,
+      timeEnd:timeEnd
     });
   },
 
@@ -132,6 +138,7 @@ Page({
    */
   async onFormSubmmit() {
     let start = this.timeStampHandle(this.data.currentstartDate);
+
     let end = this.timeStampHandle(this.data.currentendDate);
     let option = {
       start: start,
@@ -181,11 +188,11 @@ Page({
         setTimeout(() => {
           PopUp.Toast(response.message, 2, 1500);
         }, 500);
-        // setTimeout(() => {
-        //   wx.redirectTo({
-        //     url: '/pages/index/index'
-        //   })
-        // }, 2000);
+        setTimeout(() => {
+          wx.redirectTo({
+            url: '/pages/index/index'
+          })
+        }, 2000);
       } else {
         PopUp.Toast(response.message, 2, 2000);
       }
@@ -220,11 +227,11 @@ Page({
         setTimeout(() => {
           PopUp.Toast(response.message, 2, 1500);
         }, 500);
-        // setTimeout(() => {
-        //   wx.redirectTo({
-        //     url: '/pages/index/index'
-        //   })
-        // }, 2000);
+        setTimeout(() => {
+          wx.redirectTo({
+            url: '/pages/index/index'
+          })
+        }, 2000);
       } else {
         PopUp.Toast(response.message, 2, 2000);
       }
@@ -279,11 +286,11 @@ Page({
         setTimeout(() => {
           PopUp.Toast(response.message, 2, 1500);
         }, 500);
-        // setTimeout(() => {
-        //   wx.redirectTo({
-        //     url: '/pages/index/index'
-        //   })
-        // }, 2000);
+        setTimeout(() => {
+          wx.redirectTo({
+            url: '/pages/index/index'
+          })
+        }, 2000);
       } else {
         PopUp.Toast(response.message, 2, 2000);
       }

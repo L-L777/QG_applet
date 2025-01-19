@@ -520,7 +520,10 @@
             <!-- 面试人数 -->
             <van-field label="人数" value="{{ value }}" type="number" placeholder="请输入最大人数" border="{{ true }}" bind:change="onTotalChange" />
         </van-cell-group>
+        <view class="choose_time">当前选择的面试开始时间：{{timeStart}}</view>
+        <view class="choose_time">当前选择的面试结束时间：{{timeEnd}}</view>
         <van-button type="primary" block bind:click='onFormSubmmit'>确认创建</van-button>
+        <view class="create_cue">提示：管理员只能创建对应组别的面试时间</view>
 
     </view>
 </van-popup>
