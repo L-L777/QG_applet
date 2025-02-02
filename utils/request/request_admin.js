@@ -1,5 +1,5 @@
 import PopUp from '../tools/PopUp';
-const baseUrl = 'https://qgailab.com/newer/managers/';
+const baseUrl = 'https://qgailab.com/newer/app/manager/';
 // const baseUrl = 'http://47.113.224.195:31111/app/manager/';
 
 const Request = (options) => {
