@@ -203,8 +203,10 @@ Page({
         },
         fail(errMsg, errCode) {
           console.log(errCode, errMsg);
+          console.log(tmplIds);
           PopUp.Toast('操作取消', 3, 2000);
-        }
+        },
+        
       })
     } else {
       PopUp.Toast('操作取消', 3, 2000);

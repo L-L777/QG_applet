@@ -54,7 +54,7 @@
     <view class="main">
       <view class="up">
         <!-- 关闭场次 -->
-        <view class="card1" data-status="1" bind:tap="changeStatus">
+        <view class="card1" data-status="2" bind:tap="changeStatus">
           <image src="./image/strange.svg" class="iconclass" mode="" />
         </view>
         <!-- 叫号下一个 -->
@@ -68,7 +68,7 @@
           <image src="./image/total.svg" class="iconclass" mode="" />
         </view>
         <!-- 开启签到 -->
-        <view class="card4" data-status="2" bind:tap="changeStatus">
+        <view class="card4" data-status="1" bind:tap="changeStatus">
           <image src="./image/more.svg" class="iconclass" mode="" />
         </view>
       </view>
