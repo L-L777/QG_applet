@@ -124,7 +124,7 @@ Page({
        * @description 订阅消息模板授权
        */
       wx.requestSubscribeMessage({
-        tmplIds: ['LGKdqAx3HKjLYXYPA4L1FGGuauHTBcOc1E-Ku16Go6k'],
+        tmplIds: ['D6TcvVEdYyyQjkYWXIzW7W7lFz_8WiEjdhzgoNAqnmM'],
         success(errMsg) {
           console.log(errMsg);
           try {

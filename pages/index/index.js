@@ -63,6 +63,7 @@ Page({
               wx.setStorageSync('platformToken', platformToken);
               //把新生端Token注入到全局
               app.globalData.platformToken = platformToken;
+              app.globalData.identity = permissions;
               PopUp.Toast(response.message, 1, 2000);
               //把新生端Token注入到当前页面
               that.setData({
