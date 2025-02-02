@@ -49,14 +49,14 @@
                                 <span style="display: inline-block;width: 20rpx;"></span>
                                 <van-button size="mini" type="danger" bind:click="changeStatus" data-periodid="{{item.id}}" data-status="1">冻结场次</van-button>
                             </block>
-                            <block wx:elif="{{item.status===0||item.status===2}}">
+                            <block wx:elif="{{item.status===0||item.status===1}}">
                                 <van-button size="mini" type="info" bind:click="viewInfo" data-status="{{item.status}}" data-periodid="{{item.id}}">查看详情</van-button>
                                 <span style="display: inline-block;width: 20rpx;"></span>
                                 <van-button size="mini" type="primary" bind:click="changeStatus" data-periodid="{{item.id}}" data-status="-1">暂停预约</van-button>
                                 <span style="display: inline-block;width: 20rpx;"></span>
                                 <van-button size="mini" type="danger" bind:click="changeStatus" data-periodid="{{item.id}}" data-status="1">结束队列</van-button>
                             </block>
-                            <block wx:elif="{{item.status===1}}">
+                            <block wx:elif="{{item.status===2}}">
                                 <van-button size="mini" type="danger" disabled>已冻结</van-button>
                                 <span style="display: inline-block;width: 20rpx;"></span>
                                 <van-button size="mini" type="primary" bind:click="changeStatus" data-periodid="{{item.id}}" data-status="-1">重启场次</van-button>
@@ -120,14 +120,14 @@
                                 <span style="display: inline-block;width: 20rpx;"></span>
                                 <van-button size="mini" type="danger" bind:click="changeStatus" data-periodid="{{item.id}}" data-status="1">冻结场次</van-button>
                             </block>
-                            <block wx:elif="{{item.status===0||item.status===2}}">
+                            <block wx:elif="{{item.status===0||item.status===1}}">
                                 <van-button size="mini" type="info" bind:click="viewInfo" data-status="{{item.status}}" data-periodid="{{item.id}}">查看详情</van-button>
                                 <span style="display: inline-block;width: 20rpx;"></span>
                                 <van-button size="mini" type="primary" bind:click="changeStatus" data-periodid="{{item.id}}" data-status="-1">暂停预约</van-button>
                                 <span style="display: inline-block;width: 20rpx;"></span>
                                 <van-button size="mini" type="danger" bind:click="changeStatus" data-periodid="{{item.id}}" data-status="1">结束队列</van-button>
                             </block>
-                            <block wx:elif="{{item.status===1}}">
+                            <block wx:elif="{{item.status===2}}">
                                 <van-button size="mini" type="danger" disabled>已冻结</van-button>
                                 <span style="display: inline-block;width: 20rpx;"></span>
                                 <van-button size="mini" type="primary" bind:click="changeStatus" data-periodid="{{item.id}}" data-status="-1">重启场次</van-button>
@@ -191,14 +191,14 @@
                                 <span style="display: inline-block;width: 20rpx;"></span>
                                 <van-button size="mini" type="danger" bind:click="changeStatus" data-periodid="{{item.id}}" data-status="1">冻结场次</van-button>
                             </block>
-                            <block wx:elif="{{item.status===0||item.status===2}}">
+                            <block wx:elif="{{item.status===0||item.status===1}}">
                                 <van-button size="mini" type="info" bind:click="viewInfo" data-status="{{item.status}}" data-periodid="{{item.id}}">查看详情</van-button>
                                 <span style="display: inline-block;width: 20rpx;"></span>
                                 <van-button size="mini" type="primary" bind:click="changeStatus" data-periodid="{{item.id}}" data-status="-1">暂停预约</van-button>
                                 <span style="display: inline-block;width: 20rpx;"></span>
                                 <van-button size="mini" type="danger" bind:click="changeStatus" data-periodid="{{item.id}}" data-status="1">结束队列</van-button>
                             </block>
-                            <block wx:elif="{{item.status===1}}">
+                            <block wx:elif="{{item.status===2}}">
                                 <van-button size="mini" type="danger" disabled>已冻结</van-button>
                                 <span style="display: inline-block;width: 20rpx;"></span>
                                 <van-button size="mini" type="primary" bind:click="changeStatus" data-periodid="{{item.id}}" data-status="-1">重启场次</van-button>
@@ -262,14 +262,14 @@
                                 <span style="display: inline-block;width: 20rpx;"></span>
                                 <van-button size="mini" type="danger" bind:click="changeStatus" data-periodid="{{item.id}}" data-status="1">冻结场次</van-button>
                             </block>
-                            <block wx:elif="{{item.status===0||item.status===2}}">
+                            <block wx:elif="{{item.status===0||item.status===1}}">
                                 <van-button size="mini" type="info" bind:click="viewInfo" data-status="{{item.status}}" data-periodid="{{item.id}}">查看详情</van-button>
                                 <span style="display: inline-block;width: 20rpx;"></span>
                                 <van-button size="mini" type="primary" bind:click="changeStatus" data-periodid="{{item.id}}" data-status="-1">暂停预约</van-button>
                                 <span style="display: inline-block;width: 20rpx;"></span>
                                 <van-button size="mini" type="danger" bind:click="changeStatus" data-periodid="{{item.id}}" data-status="1">结束队列</van-button>
                             </block>
-                            <block wx:elif="{{item.status===1}}">
+                            <block wx:elif="{{item.status===2}}">
                                 <van-button size="mini" type="danger" disabled>已冻结</van-button>
                                 <span style="display: inline-block;width: 20rpx;"></span>
                                 <van-button size="mini" type="primary" bind:click="changeStatus" data-periodid="{{item.id}}" data-status="-1">重启场次</van-button>
@@ -333,14 +333,14 @@
                                 <span style="display: inline-block;width: 20rpx;"></span>
                                 <van-button size="mini" type="danger" bind:click="changeStatus" data-periodid="{{item.id}}" data-status="1">冻结场次</van-button>
                             </block>
-                            <block wx:elif="{{item.status===0||item.status===2}}">
+                            <block wx:elif="{{item.status===0||item.status===1}}">
                                 <van-button size="mini" type="info" bind:click="viewInfo" data-status="{{item.status}}" data-periodid="{{item.id}}">查看详情</van-button>
                                 <span style="display: inline-block;width: 20rpx;"></span>
                                 <van-button size="mini" type="primary" bind:click="changeStatus" data-periodid="{{item.id}}" data-status="-1">暂停预约</van-button>
                                 <span style="display: inline-block;width: 20rpx;"></span>
                                 <van-button size="mini" type="danger" bind:click="changeStatus" data-periodid="{{item.id}}" data-status="1">结束队列</van-button>
                             </block>
-                            <block wx:elif="{{item.status===1}}">
+                            <block wx:elif="{{item.status===2}}">
                                 <van-button size="mini" type="danger" disabled>已冻结</van-button>
                                 <span style="display: inline-block;width: 20rpx;"></span>
                                 <van-button size="mini" type="primary" bind:click="changeStatus" data-periodid="{{item.id}}" data-status="-1">重启场次</van-button>
@@ -403,14 +403,14 @@
                                 <span style="display: inline-block;width: 20rpx;"></span>
                                 <van-button size="mini" type="danger" bind:click="changeStatus" data-periodid="{{item.id}}" data-status="1">冻结场次</van-button>
                             </block>
-                            <block wx:elif="{{item.status===0||item.status===2}}">
+                            <block wx:elif="{{item.status===0||item.status===1}}">
                                 <van-button size="mini" type="info" bind:click="viewInfo" data-status="{{item.status}}" data-periodid="{{item.id}}">查看详情</van-button>
                                 <span style="display: inline-block;width: 20rpx;"></span>
                                 <van-button size="mini" type="primary" bind:click="changeStatus" data-periodid="{{item.id}}" data-status="-1">暂停预约</van-button>
                                 <span style="display: inline-block;width: 20rpx;"></span>
                                 <van-button size="mini" type="danger" bind:click="changeStatus" data-periodid="{{item.id}}" data-status="1">结束队列</van-button>
                             </block>
-                            <block wx:elif="{{item.status===1}}">
+                            <block wx:elif="{{item.status===2}}">
                                 <van-button size="mini" type="danger" disabled>已冻结</van-button>
                                 <span style="display: inline-block;width: 20rpx;"></span>
                                 <van-button size="mini" type="primary" bind:click="changeStatus" data-periodid="{{item.id}}" data-status="-1">重启场次</van-button>
@@ -473,14 +473,14 @@
                                 <span style="display: inline-block;width: 20rpx;"></span>
                                 <van-button size="mini" type="danger" bind:click="changeStatus" data-periodid="{{item.id}}" data-status="1">冻结场次</van-button>
                             </block>
-                            <block wx:elif="{{item.status===0||item.status===2}}">
+                            <block wx:elif="{{item.status===0||item.status===1}}">
                                 <van-button size="mini" type="info" bind:click="viewInfo" data-status="{{item.status}}" data-periodid="{{item.id}}">查看详情</van-button>
                                 <span style="display: inline-block;width: 20rpx;"></span>
                                 <van-button size="mini" type="primary" bind:click="changeStatus" data-periodid="{{item.id}}" data-status="-1">暂停预约</van-button>
                                 <span style="display: inline-block;width: 20rpx;"></span>
                                 <van-button size="mini" type="danger" bind:click="changeStatus" data-periodid="{{item.id}}" data-status="1">结束队列</van-button>
                             </block>
-                            <block wx:elif="{{item.status===1}}">
+                            <block wx:elif="{{item.status===2}}">
                                 <van-button size="mini" type="danger" disabled>已冻结</van-button>
                                 <span style="display: inline-block;width: 20rpx;"></span>
                                 <van-button size="mini" type="primary" bind:click="changeStatus" data-periodid="{{item.id}}" data-status="-1">重启场次</van-button>
