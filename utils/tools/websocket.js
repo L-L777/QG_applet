@@ -65,11 +65,11 @@ const connectWebSocket = function (onMessageCallback) {
     context['hastoken'] = true;
     // 保持ws的唯一性
     if (socketTask === null) {
-      // let url = 'wss://qgailab.com/newer/interview'
-      let url='ws://47.113.224.195:31111/interview'
+      let url = 'wss://qgailab.com/newer/interview'
+      // let url='ws://47.113.224.195:31111/interview'
       if (wx.getStorageSync('identity') === "Admin") {
-        // url = 'wss://qgailab.com/newer/interviewer'
-        url='ws://47.113.224.195:31111/interviewer'
+        url = 'wss://qgailab.com/newer/interviewer'
+        // url='ws://47.113.224.195:31111/interviewer'
       }
       // 尚未存在可用ws实例，创建ws连接任务
       socketTask = wx.connectSocket({
