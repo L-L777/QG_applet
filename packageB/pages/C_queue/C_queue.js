@@ -12,8 +12,9 @@ Page({
     response: {},
     name: '',
     place: '',
-    mySigned: '', //我的派号
-    now: '', //现在面到的序号
+    // mySigned: '', //我的派号
+    // now: '', //现在面到的序号
+    nextNum:'',//前方人数
     start: '', //面试开始时间
     end: '' //面试结束时间
   },
@@ -31,16 +32,18 @@ Page({
             groupName,
             name,
             place,
-            mySigned,
-            now,
+            // mySigned,
+            // now,
+            nextNum,
             start,
             end,
           } = result.data;
           that.setData({
             name: name,
             place: place,
-            mySigned: mySigned,
-            now: now,
+            // mySigned: mySigned,
+            // now: now,
+            nextNum:nextNum,
             start: formatTimestamp(start),
             end: formatTimestamp(end),
           })
@@ -63,15 +66,19 @@ Page({
     socket.registerOnMessageCallback(function (res) {
       // 处理收到的消息
       console.log('Received message:', res);
-      if (res.type === 'next') {
+      if (res.type === 'nextNuw') {
         try {
-          console.log('next', res)
+          console.log('nextNuw', res)
           const result = res;
           if (result.code == 200 || result.code == 506) {
             that.setData({
-              now: result.data,
+              // now: result.data,
+              nextNum: result.data,
             })
-            if (result.data === that.data.mySigned) {
+            // if (result.data === that.data.mySigned) {
+            //   this.tip()
+            // }
+            if (result.data === 0) {
               this.tip()
             }
           } else if (result.code == 401) {
@@ -124,7 +131,8 @@ Page({
         if (result.code == 200 || result.code == 506) {
           const now = result.data.now;
           this.setData({
-            now: now
+            // now: now
+            nextNum: now
           })
           console.log(result);
           PopUp.Toast(result.message, 1, 2000);

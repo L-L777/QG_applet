@@ -23,18 +23,22 @@
       <text>面试地点</text>
       <text class="info-content">{{place}}</text>
     </view>
-    <view class="info-item">
+    <!-- <view class="info-item">
       <text>我的序号</text>
       <text class="info-content">{{mySigned}}</text>
     </view>
     <view class="info-item">
       <text>前方人数</text>
       <text class="info-content">{{mySigned-now}}</text>
+    </view> -->
+    <view class="info-item">
+      <text>前方人数</text>
+      <text class="info-content">{{nextNum}}</text>
     </view>
   </view>
   <!-- 动画 -->
   <view class="sign">
-    <block wx:if="{{now!==mySigned}}">
+    <block wx:if="{{nextNum!==0}}">
       <view class="main">
         <view class="card">
           <view class="ups">
