@@ -164,6 +164,8 @@ Page({
           PopUp.Toast(result.message, 1, 2000);
         } else if (result.code == 205) {
           PopUp.Toast(result.message, 2, 2000)
+        }else if(result.code == 508){
+          PopUp.Toast('前面没人了', 2, 2000)
         } else {
           PopUp.Toast('更新失败', 2, 2000)
         }

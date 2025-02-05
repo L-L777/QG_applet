@@ -38,7 +38,7 @@
   </view>
   <!-- 动画 -->
   <view class="sign">
-    <block wx:if="{{nextNum===-1}}">
+    <block wx:if="{{nextNum!==0}}">
       <view class="main">
         <view class="card">
           <view class="ups">
