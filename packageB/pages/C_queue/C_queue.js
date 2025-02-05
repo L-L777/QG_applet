@@ -38,15 +38,28 @@ Page({
             start,
             end,
           } = result.data;
-          that.setData({
-            name: name,
-            place: place,
-            // mySigned: mySigned,
-            // now: now,
-            nextNum:nextNum,
-            start: formatTimestamp(start),
-            end: formatTimestamp(end),
-          })
+          if(nextNum===-1){
+            that.setData({
+              name: name,
+              place: place,
+              // mySigned: mySigned,
+              // now: now,
+              nextNum:"面试结果审核中",
+              start: formatTimestamp(start),
+              end: formatTimestamp(end),
+            })
+          }else{
+            that.setData({
+              name: name,
+              place: place,
+              // mySigned: mySigned,
+              // now: now,
+              nextNum:nextNum,
+              start: formatTimestamp(start),
+              end: formatTimestamp(end),
+            })
+          }
+         
         } else if (result.code == 401) {
           PopUp.Toast(result.message, 2, 2000)
           wx.removeStorageSync('platformToken')
@@ -66,10 +79,16 @@ Page({
     socket.registerOnMessageCallback(function (res) {
       // 处理收到的消息
       console.log('Received message:', res);
-      if (res.type === 'nextNuw') {
+      if (res.type === 'nextNum') {
         try {
-          console.log('nextNuw', res)
+          console.log('nextNum', res)
           const result = res;
+         
+          that.setData({
+            // now: result.data,
+            nextNum: result.data,
+          })
+
           if (result.code == 200 || result.code == 506) {
             that.setData({
               // now: result.data,
@@ -129,7 +148,14 @@ Page({
         const result = JSON.parse(res);
         console.log(result)
         if (result.code == 200 || result.code == 506) {
-          const now = result.data.now;
+          const now = result.data.nextNum;
+          if(now===-1){
+            this.setData({
+              // now: now
+              nextNum: "面试结果审核中"
+            })
+            return;
+          }
           this.setData({
             // now: now
             nextNum: now

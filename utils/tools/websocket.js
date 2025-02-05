@@ -172,12 +172,23 @@ const connectWebSocket = function (onMessageCallback) {
           response = JSON.parse(data);
         }
         // 主动接受的消息-进行标记
-        if (type === 'next') {
+        if (type === 'nextNum') {
           let newdata = JSON.parse(data)
-          newdata.type = 'next'
-          data = newdata
-          console.log(data, "成功处理next的data")
-          response = data;
+          if(typeof newdata ==='object'){
+            newdata.type = 'nextNum'
+            data = newdata
+            console.log(data, "成功处理next的data")
+            response = data;
+          }else{
+            let newObj={}
+            newObj.type = 'nextNum'
+            newObj.data=newdata
+            data=newObj
+            console.log(data, "成功处理next的data")
+            response=data
+
+          }
+          
         } else if (type === 'manager') {
           let newdata = JSON.parse(data)
           newdata.type = 'manager'
